@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.footer-container {
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background-color: #1a237e;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cta {
+    max-width: 600px;
+}
+
+.footer-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-features {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature::before {
+    content: "✓";
+    color: #03a9f4;
+}
+
+.cta-button {
+    background-color: #03a9f4;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-bottom {
+    background-color: #03a9f4;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.newsletter {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.newsletter h3 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+}
+
+.newsletter-form button {
+    background-color: #1a237e;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand p {
+    margin: 1rem 0;
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-links h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-brand {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+<body>
+<footer class="footer-container">
+    <div class="footer-top">
+        <div class="footer-cta">
+            <h2>Already to improve or repair your home? Let's Talk!</h2>
+            <div class="footer-features">
+                <div class="feature">Free Quotes</div>
+                <div class="feature">100% Commitment-Free</div>
+            </div>
+            <a href="#" class="cta-button">Call Us Now</a>
+        </div>
+        <div class="footer-image">
+            <img src="home.jpg">
+            <!-- Image would go here -->
+            <img src="home2" alt="Real estate professional with property" />
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="newsletter">
+            <h3>Stay Connected with Our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>HomePro</h3>
+                <p>HomePro is your premier destination for top-notch smart home service and repair.</p>
+                <div class="social-links">
+                    <a href="#"><span>FB</span></a>
+                    <a href="#"><span>TW</span></a>
+                    <a href="#"><span>IG</span></a>
+                    <a href="#"><span>YT</span></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
